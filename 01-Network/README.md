@@ -128,3 +128,32 @@ IP Address Allocation
 | OT-SOC Server| VMnet2| 192.168.100.30| OT Security Monitoring |
 
 This structured addressing scheme improves readability, simplifies troubleshooting, and allows additional OT devices to be integrated without redesigning the network.
+
+## Understanding the /24 Subnet
+
+All virtual machines in the OT network are configured using a "/24" subnet mask.
+
+The "/24" prefix indicates that the first three octets of the IP address identify the network, while the last octet identifies the individual host.
+
+Example:
+
+| IP Address| Network| Host |
+|---------------------------|
+| 192.168.100.10/24| 192.168.100| 10 |
+| 192.168.100.20/24| 192.168.100| 20 |
+| 192.168.100.30/24| 192.168.100| 30 |
+
+Because all OT devices belong to the same "192.168.100.0/24" network, they can communicate directly without requiring a router.
+
+Using a "/24" subnet provides a simple, organized addressing scheme that is commonly used in enterprise and industrial environments.
+
+
+## Routing and Default Gateway
+
+A gateway is the network device responsible for forwarding traffic from one network to another.
+
+In this project, the Ubuntu Server uses the VMware NAT gateway to access the Internet. The default route points to the NAT interface, allowing software updates, package installation, and external communication.
+
+The Host-Only OT network does not require a gateway because all OT systems are located within the same subnet ("192.168.100.0/24"). Communication between Ubuntu Server, SCADA Server, and OT-SOC Server occurs directly without routing through another device.
+
+This design reflects common OT network segmentation practices, where internal industrial communication remains isolated while selected systems maintain controlled access to external resources.
