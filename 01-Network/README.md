@@ -1,34 +1,23 @@
-# OT Security Lab - Phase 1
-## VMware Network Infrastructure
+# Phase 1 - Network Infrastructure
 
+## Introduction
 
-## Project Overview
+Computer networking is the foundation of every modern IT and OT environment. Before deploying services such as PXE Boot, DHCP, TFTP, SCADA, or OT Security monitoring, a reliable and properly designed network infrastructure must be established.
 
-This project demonstrates the implementation of an enterprise-style OT (Operational Technology) network using VMware Workstation.
+This phase focuses on building a secure virtual network using VMware Workstation. The environment consists of Ubuntu Server, SCADA Server, and OT-SOC Server connected through NAT and Host-Only virtual networks.
 
-The objective of this phase is to build a secure and isolated OT infrastructure consisting of Ubuntu Server, SCADA Server, and OT-SOC Server while maintaining Internet connectivity where required.
+The networking configuration provides Internet access where required while maintaining an isolated OT network for secure communication between industrial systems.
 
-This networking foundation will be used in the upcoming phases such as PXE Boot, DHCP, TFTP, HTTP, Monitoring, and Attack Simulation.
+---
 
+# What is a Computer Network?
 
+A computer network is a collection of devices connected together to exchange information and resources.
 
-## Objectives
+In this lab, the network enables communication between:
 
-- Learn VMware virtual networking.
-- Configure NAT networking.
-- Configure Host-Only networking.
-- Build an isolated OT network.
-- Configure static IP addressing.
-- Verify communication between all virtual machines.
-- Prepare the environment for future OT Security projects.
+- Ubuntu Server
+- SCADA Server
+- OT-SOC Server
 
-
-
-## Lab Components
-
-| Virtual Machine | Purpose |
-|----------------|---------|
-| VMware Workstation | Virtualization Platform 
-| Engineering-Admin (Ubuntu Server 22.04LTS) | Engineering Server and Infrastructure Server |
-| SCADA Server(Centos10 GUI) | Industrial Control System Simulation |
-| OT-SOC Server(Centos 10 CLI) | Security Monitoring and Analysis |
+This networking foundation will support all future phases of the project, including PXE Boot, DHCP, TFTP, HTTP, and OT Security Monitoring.
