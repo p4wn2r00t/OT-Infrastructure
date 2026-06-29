@@ -1,9 +1,11 @@
-
-
 # OT Security Lab - Phase 1
+## VMware Network Infrastructure
 
-This project demonstrates the implementation of a basic OT Security lab using VMware.
 
-The objective was to create an isolated OT network while maintaining Internet connectivity for selected systems.
+## Project Overview
 
-The lab consists of Ubuntu Server, SCADA, and OT-SOC virtual machines.
+This project demonstrates the implementation of an enterprise-style OT (Operational Technology) network using VMware Workstation.
+
+The objective of this phase is to build a secure and isolated OT infrastructure consisting of Ubuntu Server, SCADA Server, and OT-SOC Server while maintaining Internet connectivity where required.
+
+This networking foundation will be used in the upcoming phases such as PXE Boot, DHCP, TFTP, HTTP, Monitoring, and Attack Simulation.
