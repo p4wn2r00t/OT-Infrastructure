@@ -120,6 +120,7 @@ Two separate IP networks are used in this lab:
 IP Address Allocation
 
 | Virtual Machine| Interface| IP Address| Purpose |
+|----------------|----------|-----------|---------|
 | Ubuntu Server| NAT| 172.16.67.134| Internet Access |
 | Ubuntu Server| VMnet2| 192.168.100.10| OT Communication |
 | SCADA Server| VMnet2| 192.168.100.20| Industrial Control System |
