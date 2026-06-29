@@ -58,3 +58,62 @@ The objectives of this project are:
 - Host-only Networking
 - Git
 - GitHub
+
+
+## Skills Demonstrated
+
+This project demonstrates hands-on experience in the following areas:
+
+### Virtualization
+- VMware Workstation
+- Virtual Network Configuration
+- Virtual Machine Management
+
+### Linux Administration
+- Ubuntu Server Administration
+- Rocky Linux Administration
+- Static IP Configuration
+- Network Troubleshooting
+- SSH
+
+### Networking
+- NAT Networking
+- Host-Only Networking
+- Static Routing
+- IP Address Planning
+- Network Segmentation
+
+### OT Infrastructure
+- Engineering Workstation
+- SCADA Infrastructure
+- OT-SOC
+- Industrial Network Design
+
+### Version Control
+- Git
+- GitHub Documentation
+
+
+## Learning Roadmap
+
+The project is being developed in multiple phases.
+
+- ✅ Phase 1 - VMware Networking
+- 🔄 Phase 2 - PXE Boot Infrastructure
+- ⏳ Phase 3 - DHCP Server
+- ⏳ Phase 4 - TFTP Server
+- ⏳ Phase 5 - HTTP Repository
+- ⏳ Phase 6 - SCADA Infrastructure
+- ⏳ Phase 7 - OT-SOC Configuration
+- ⏳ Phase 8 - OT Monitoring
+- ⏳ Phase 9 - Attack Simulation
+- ⏳ Phase 10 - Detection & Response
+
+
+## Author
+
+**Sunil Kolle**
+
+This repository is part of my hands-on learning journey in OT Infrastructure, OT Security and Linux Administrator
+
+Every phase is implemented, tested, documented, and continuously improved to simulate real-world industrial environments.
