@@ -157,3 +157,43 @@ In this project, the Ubuntu Server uses the VMware NAT gateway to access the Int
 The Host-Only OT network does not require a gateway because all OT systems are located within the same subnet ("192.168.100.0/24"). Communication between Ubuntu Server, SCADA Server, and OT-SOC Server occurs directly without routing through another device.
 
 This design reflects common OT network segmentation practices, where internal industrial communication remains isolated while selected systems maintain controlled access to external resources.
+
+
+## OT Lab Architecture
+
+The networking design follows the principle of separating IT and OT communication.
+
+### Ubuntu Server
+
+The Ubuntu Server functions as the central infrastructure server for the lab. It is equipped with two network interfaces:
+
+- NAT interface for Internet access, software installation, and updates.
+- Host-Only interface for communication with OT systems.
+
+In later phases, this server will provide PXE Boot, DHCP, TFTP, and HTTP services.
+
+### SCADA Server
+
+The SCADA Server represents the industrial control environment. It communicates only through the isolated OT network and is not directly exposed to the Internet.
+
+### OT-SOC Server
+
+The OT-SOC Server represents the Security Operations Center. It uses one interface for Internet access to receive updates and another interface to monitor traffic within the OT network.
+
+This architecture demonstrates network segmentation, where IT services and OT communication are separated to improve security and reduce the attack surface.
+
+
+## Ethernet Frames
+
+Communication on an Ethernet network occurs using Ethernet Frames. Before data is transmitted across the network, the operating system encapsulates the data inside an Ethernet Frame.
+
+An Ethernet Frame contains:
+
+- Source MAC Address
+- Destination MAC Address
+- EtherType
+- Payload (IP Packet)
+
+Within the local OT network, communication is performed using MAC addresses. The Address Resolution Protocol (ARP) is used to map IP addresses to MAC addresses before data transmission begins.
+
+Understanding Ethernet Frames is essential for analyzing network traffic using tools such as Wireshark and tcpdump.
