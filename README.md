@@ -1,4 +1,4 @@
-# OT Infrastructure Lab
+# OT Security Infrastructure 
 ## Project Overview
 Welcome to my OT (Operational Technology) Infrastructure Lab.
 This repository documents the design, implementation, and documentation of a complete OT infrastructure built in a virtual environment using VMware Workstation.
