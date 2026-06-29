@@ -119,11 +119,11 @@ Two separate IP networks are used in this lab:
 
 IP Address Allocation
 
-Virtual Machine| Interface| IP Address| Purpose
-Ubuntu Server| NAT| 172.16.67.134| Internet Access
-Ubuntu Server| VMnet2| 192.168.100.10| OT Communication
-SCADA Server| VMnet2| 192.168.100.20| Industrial Control System
-OT-SOC Server| NAT| 172.16.67.128| Internet Access
-OT-SOC Server| VMnet2| 192.168.100.30| OT Security Monitoring
+| Virtual Machine| Interface| IP Address| Purpose |
+| Ubuntu Server| NAT| 172.16.67.134| Internet Access |
+| Ubuntu Server| VMnet2| 192.168.100.10| OT Communication |
+| SCADA Server| VMnet2| 192.168.100.20| Industrial Control System |
+| OT-SOC Server| NAT| 172.16.67.128| Internet Access |
+| OT-SOC Server| VMnet2| 192.168.100.30| OT Security Monitoring |
 
 This structured addressing scheme improves readability, simplifies troubleshooting, and allows additional OT devices to be integrated without redesigning the network.
